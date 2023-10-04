@@ -1,0 +1,143 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name": "vegetables",
+      "description": "healthy food"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 7,
+    "fields": {
+      "name": "fruits",
+      "description": "healthy and tasty food"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 8,
+    "fields": {
+      "name": "dairy",
+      "description": "made of milk"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Яблоко",
+      "description": "Круглое зеленое кислое нечто",
+      "preview": "products/яблоко.webp",
+      "category": 7,
+      "price": 100,
+      "creation_date": "2023-10-02T18:42:01.258Z",
+      "mod_date": "2023-10-02T18:42:01.258Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Ананас",
+      "description": "по факту трава",
+      "preview": "products/ананас.jpeg",
+      "category": 7,
+      "price": 500,
+      "creation_date": "2023-10-02T18:47:40.535Z",
+      "mod_date": "2023-10-02T18:47:40.535Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Груша",
+      "description": "Вкусно с сыром",
+      "preview": "products/груша.jpg",
+      "category": 7,
+      "price": 150,
+      "creation_date": "2023-10-02T18:49:10.689Z",
+      "mod_date": "2023-10-02T18:49:10.689Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Молоко",
+      "description": "Цельное",
+      "preview": "products/молоко.jpg",
+      "category": 8,
+      "price": 70,
+      "creation_date": "2023-10-02T18:52:33.088Z",
+      "mod_date": "2023-10-02T18:52:33.088Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "сыр",
+      "description": "из цельного молока и закваски",
+      "preview": "products/сыр.jpg",
+      "category": 8,
+      "price": 1000,
+      "creation_date": "2023-10-02T18:53:12.995Z",
+      "mod_date": "2023-10-02T18:53:12.995Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "кефир",
+      "description": "кисломолочный продукт",
+      "preview": "products/кефир.webp",
+      "category": 8,
+      "price": 60,
+      "creation_date": "2023-10-02T18:53:54.960Z",
+      "mod_date": "2023-10-02T18:53:54.960Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "лук",
+      "description": "репчатый овощ",
+      "preview": "",
+      "category": 6,
+      "price": 30,
+      "creation_date": "2023-10-02T18:54:28.151Z",
+      "mod_date": "2023-10-02T18:54:28.151Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "Капуста",
+      "description": "белокочанная",
+      "preview": "",
+      "category": 6,
+      "price": 50,
+      "creation_date": "2023-10-02T18:54:48.035Z",
+      "mod_date": "2023-10-02T18:54:48.035Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "картофель",
+      "description": "молодой",
+      "preview": "",
+      "category": 6,
+      "price": 20,
+      "creation_date": "2023-10-02T18:55:28.983Z",
+      "mod_date": "2023-10-02T18:55:28.983Z"
+    }
+  }
+]
