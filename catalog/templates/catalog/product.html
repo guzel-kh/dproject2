@@ -1,0 +1,20 @@
+{% extends 'catalog/base.html' %}
+{% block content %}
+<div class="row text-center">
+    {% for object in object_list %}
+    <div class="card mb-3" style="max-width: 100 px;">
+        <div class="row g-0">
+            {% include 'catalog/includes/inc_img.html' %}
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h1 class="card-title">О продукте</h1>
+                    <p class="card-text">{{ object.description }}</p>
+                    <p class="card-text"><small class="text-body-secondary">Создан {{ object.creation_date }}</small></p>
+                    <p class="card-text"><small class="text-body-secondary">Изменен {{ object.mod_date }}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

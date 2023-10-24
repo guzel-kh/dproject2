@@ -1,8 +1,14 @@
 from django.shortcuts import render
 
+from catalog.models import Product
+
 
 def index(request):
-    return render(request, 'catalog/index.html')
+    context = {
+        'object_list': Product.objects.all(),
+        'title': 'Продукты'
+    }
+    return render(request, 'catalog/index.html', context)
 
 
 def contacts(request):
@@ -12,4 +18,13 @@ def contacts(request):
         message = request.POST.get('message')
         print(f'You have new message from {name}({phone}): {message}')
     return render(request, 'catalog/contacts.html')
+
+
+def product(request, pk):
+    product_item = Product.objects.get(pk=pk)
+    context = {
+        'object_list': Product.objects.filter(id=pk),
+        'title': f'Продукт {product_item.name}'
+    }
+    return render(request, 'catalog/product.html', context)
 

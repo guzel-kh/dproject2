@@ -1,0 +1,9 @@
+{% load my_tags %}
+<div class="col-md-8">
+    <h1 class="card-title">{{ object.name|title }}</h1>
+    <h5 class="card-title">{{ object.category }}</h5>
+    <img src="{{ object.preview|mediapath }}" class="img-fluid rounded-start" alt="Изображение отсутствует">
+<!--    <img src="{% mediapath object.preview %}" class="img-fluid rounded-start" alt="Изображение отсутствует">-->
+    <h1 class="card-title">{{ object.price }} руб</h1>
+    <button type="button" class="btn btn-primary btn-sm">Добавить в корзину</button>
+</div>
