@@ -7,7 +7,7 @@
             <div class="row g-0">
                 {% include 'catalog/includes/inc_img.html' %}
                 <div class="col-md-4">{{ object.description|slice:"0:100" }}
-                    <a href="{% url 'catalog:product' object.pk %}" type="button" class="btn btn-primary btn-sm">Подробнее
+                    <a href="{% url 'catalog:view_product' object.pk %}" type="button" class="btn btn-primary btn-sm">Подробнее
                         о товаре</a>
                 </div>
             </div>
