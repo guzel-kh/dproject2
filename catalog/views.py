@@ -11,7 +11,7 @@ from catalog.models import Product
 #     }
 #     return render(request, 'catalog/index.html', context)
 
-class ProductsListView(ListView):
+class ProductListView(ListView):
     model = Product
     extra_context = {'title': 'Продукты'}
 
@@ -36,5 +36,3 @@ def contacts(request):
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'catalog/product_detail.html/'
-

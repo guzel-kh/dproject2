@@ -6,14 +6,9 @@ register = template.Library()
 
 @register.filter()
 def mediapath(val):
-    if val:
-        return f'/media/{val}'
+    return f'/media/{val}'
 
-    return '#'
 
 @register.simple_tag()
 def mediapath(val):
-    if val:
-        return f'/media/{val}'
-
-    return '#'
+    return f'/media/{val}'
