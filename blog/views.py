@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, UpdateView, DetailView, DeleteView
@@ -51,6 +52,8 @@ class PostDetailView(DetailView):
     def get_object(self, queryset=None):
         self.object = super().get_object(queryset)
         self.object.views_count += 1
+        if self.object.views_count == 100:
+            send_mail('Ура!!!', 'У тебя 100 просмотров', '79117241625@yandex.ru', ['79117241625@yandex.ru'], fail_silently=False)
         self.object.save()
         return self.object
 
